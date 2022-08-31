@@ -1,0 +1,134 @@
+/* STYLE BOOKING */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+.container-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.movie-container {
+    margin: 20px 0;
+}
+
+.movie-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.container-set {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.seat {
+    background-color: #444451;
+    height: 35px;
+    width: 45px;
+    margin: 3px;
+}
+
+.seat.selected {
+    background-color: #048853;
+}
+
+.seat.occupied {
+    background-color: white;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 18px;
+}
+
+.seat:nth-last-of-type(3) {
+    margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small {
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+}
+
+p.text {
+    margin: 5px 0;
+}
+
+p.text span {
+    color: #048853;
+}
+
+select option {
+    display: block;
+    outline: none;
+    border: none;
+}
+
+.img-hero-booking {
+    height: 80vh;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+}
