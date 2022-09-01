@@ -178,3 +178,9 @@ h2 {
 section {
     padding-top: 4rem;
 }
+
+@media only screen and (max-width:800px){
+    .img-hero, .accsent-img{
+      height: 300px;
+    }
+}
